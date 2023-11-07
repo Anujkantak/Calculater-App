@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+
+    <div class="container">
+       <div class="frame">
+          <h3>Calculater</h3>
+          <div >
+            <input class="text-input"type="text" id="display" disabled>
+          </div>
+          <div class="btn-groups">
+            <input class="btn" type="button" value="AC"  onClick="display.value=''" style="background-color: red;color:white">
+            <input class="btn" type="button" value="DEL"  onClick="display.value=display.value.slice(0,display.value.length-1)">
+            <input class="btn" type="button" value="%"  onClick="display.value+='%'">
+            <input class="btn" type="button" value="/"  onClick="display.value+='/'">
+          </div>
+          <div class="btn-groups">
+            <input class="btn" type="button" value="7"  onClick="display.value+='7'">
+            <input class="btn" type="button" value="8" onClick="display.value+='8'">
+            <input class="btn" type="button" value="9" onClick="display.value+='9'">
+            <input class="btn" type="button" value="*" onClick="display.value+='*'">
+          </div>
+          <div class="btn-groups">
+            <input class="btn" type="button" value="4" onClick="display.value+='4'">
+            <input class="btn" type="button" value="5" onClick="display.value+='5'">
+            <input class="btn" type="button" value="6" onClick="display.value+='6'">
+            <input class="btn" type="button" value="-" onClick="display.value+='-'">
+          </div>
+          <div class="btn-groups">
+            <input class="btn" type="button" value="1" onClick="display.value+='1'">
+            <input class="btn" type="button" value="2" onClick="display.value+='2'">
+            <input class="btn" type="button" value="3" onClick="display.value+='3'">
+            <input class="btn" type="button" value="+" onClick="display.value+='+'">
+          </div>
+          <div class="btn-groups">
+            <input class="btn" type="button" value="0" onClick="display.value+='0'">
+            <input class="btn" type="button" value="." onClick="display.value+='.'">
+            <input class="btn"  id=" calc"type="button" value="ENTER" onClick="display.value=calculate(display.value)"style="width:128px; background-color: rgb(4, 164, 28);color:white">
+            
+          </div>
+         
+       </div>
+    </div>   
+
+ <script>
+
+    function calculate(str){
+        if(str.length==0){
+            return "";
+
+        }
+        else{
+            return eval(str);
+        }
+    }
+ </script>
+</body>
+</html>

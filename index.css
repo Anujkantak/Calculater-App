@@ -1,0 +1,68 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+    
+
+}
+h3{
+    margin-top: 10px;
+    color:white;
+}
+
+body{
+   
+  background-image:linear-gradient( rgb(114, 171, 114),rgb(37, 136, 158),rgb(95, 79, 152))
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+    
+    
+}
+.frame{
+    /* height:75vh; */
+    width:25vw;
+    background-color: rgb(14, 15, 16);
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(91, 210, 117),  -2px -2px 5px rgb(230, 77, 77);
+    border-radius: 5px;
+}
+.text-input{
+   border:none;
+    outline: none;
+    text-align: right;
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px rgb(69, 162, 208),-1px -1px 5px rgb(88, 212, 208);
+    height:50px;
+    width:85%;
+    font-size: 22px;
+    color:white;
+
+}
+.btn-groups{
+    display:flex;
+    justify-content: space-around;
+    margin:15px;
+   
+}
+.btn{
+    height:44px;
+    width:55px;
+    border:none;
+    outline:none;
+    box-shadow: 1px 1px 5px rgb(223, 26, 15),-1px -1px 5px rgb(105, 37, 240);
+    border-radius: 5px;
+}
+
+.btn:active{
+    box-shadow:-3px -3px 10px rgb(95, 98, 101);
+}
+.btn:hover{
+    background-color: rgb(54, 205, 225);
+}
